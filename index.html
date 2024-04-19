@@ -7,47 +7,47 @@
 <style>
   body { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0; /* Removed margin for full viewport usage */
+    margin: 0;
     background-color: #f4f4f4; 
     color: #333;
   }
   .button {
-    padding: 20px 40px; /* Adjust padding for button size */
+    padding: 10px 20px; /* Reduced padding */
     background-color: #dddddd;
     border: none;
-    border-radius: 10px; /* Adjusted border radius for aesthetic */
+    border-radius: 10px;
     cursor: pointer;
     text-align: center;
     display: inline-block;
-    width: 28%; /* Adjust width to fit three buttons per row */
-    margin: 5px 1%; /* Reduced margin */
+    width: calc(33.33% - 20px); /* Adjusted width to fit three buttons per row */
+    margin: 10px 10px; /* Equal margin for all sides */
     text-decoration: none;
     color: black;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    font-size: 18px; /* Adjusted font size */
+    font-size: 16px; /* Adjusted font size */
   }
   .button-container {
     text-align: center;
-    margin-top: 20px; /* Adjusted margin top for spacing */
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center; /* Central alignment of buttons */
   }
   img.fullscreen {
-    width: 100%; /* Full width to maintain responsiveness */
-    height: 75vh; /* 75% of the viewport height */
-    margin-bottom: 20px; /* Space between the image and buttons */
+    width: 100%;
+    height: 75vh;
+    margin-bottom: 20px;
   }
 </style>
 </head>
 <body>
 <img src="bios.JPG" alt="Background Image" class="fullscreen">
 <div class="button-container">
-  <a href="https://landbot.online/v3/H-2161635-1WZCJ2V8Y5YVR7PC/index.html" class="button">Interview Angus Neal</a>
-  <a href="https://landbot.online/v3/H-2164321-7OQJKEB7TL7EQ5FB/index.html" class="button">Interview Eve Haddad</a>
   <a href="https://landbot.online/v3/H-2164401-YP42AEZ6CO5ITBRB/index.html" class="button">Interview Angelo Hart</a>
-  <a href="https://landbot.online/v3/H-2164331-OR1WLFJ4HM3ESFFH/index.html" class="button">Interview Harley Macias</a>
   <a href="https://landbot.online/v3/H-2164391-228LU5RZN5RJRDEA/index.html" class="button">Interview Shadiyah Hobbs</a>
+  <a href="https://landbot.online/v3/H-2164321-7OQJKEB7TL7EQ5FB/index.html" class="button">Interview Eve Haddad</a>
+  <a href="https://landbot.online/v3/H-2164331-OR1WLFJ4HM3ESFFH/index.html" class="button">Interview Harley Macias</a>
+  <a href="https://landbot.online/v3/H-2161635-1WZCJ2V8Y5YVR7PC/index.html" class="button">Interview Angus Neal</a>
   <a href="https://landbot.online/v3/H-2164361-1ZMLM0REAJ5IFUAF/index.html" class="button">Interview Vera Murphy</a>
 </div>
 </body>
