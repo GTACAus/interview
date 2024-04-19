@@ -3,39 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Interview the suspects/title>
+<title>Interview the Suspects</title>
 <style>
   body { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
+    margin: 0; /* Removed margin for full viewport usage */
     background-color: #f4f4f4; 
     color: #333;
   }
   .button {
-    padding: 40px 60px; /* Increased padding for very large buttons */
+    padding: 20px 40px; /* Adjust padding for button size */
     background-color: #dddddd;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px; /* Adjusted border radius for aesthetic */
     cursor: pointer;
     text-align: center;
     display: inline-block;
-    width: 30%; /* Adjust width to fit three buttons per row */
-    margin: 10px 1%; /* Adjusted margin and added horizontal margin */
+    width: 28%; /* Adjust width to fit three buttons per row */
+    margin: 5px 1%; /* Reduced margin */
     text-decoration: none;
     color: black;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Increased shadow for a deeper effect */
-    font-size: 20px; /* Larger font size for readability */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-size: 18px; /* Adjusted font size */
   }
   .button-container {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px; /* Adjusted margin top for spacing */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Ensures buttons are spaced nicely */
+    justify-content: space-around;
+  }
+  img.fullscreen {
+    width: 100%; /* Full width to maintain responsiveness */
+    height: 75vh; /* 75% of the viewport height */
+    margin-bottom: 20px; /* Space between the image and buttons */
   }
 </style>
 </head>
 <body>
+<img src="bios.JPG" alt="Background Image" class="fullscreen">
 <div class="button-container">
   <a href="https://landbot.online/v3/H-2164401-YP42AEZ6CO5ITBRB/index.html" class="button">Interview Angelo Hart</a>
   <a href="https://landbot.online/v3/H-2164391-228LU5RZN5RJRDEA/index.html" class="button">Interview Shadiyah Hobbs</a>
