@@ -12,31 +12,47 @@
     color: #333;
   }
   .button {
-    padding: 10px 20px; /* Reduced padding */
+    padding: 10px 20px; /* More compact padding */
     background-color: #dddddd;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
     display: inline-block;
-    width: calc(33.33% - 20px); /* Adjusted width to fit three buttons per row */
-    margin: 10px 10px; /* Equal margin for all sides */
+    width: calc(100% / 3 - 22px); /* Ensure three buttons fit per row */
+    margin: 10px; /* Consistent margin */
     text-decoration: none;
     color: black;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    font-size: 16px; /* Adjusted font size */
+    font-size: 16px;
   }
   .button-container {
     text-align: center;
-    margin-top: 20px;
+    padding: 20px 0; /* Padding for the container */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Central alignment of buttons */
+    justify-content: space-around; /* Adjusted to space-around for even spacing */
   }
   img.fullscreen {
     width: 100%;
-    height: 75vh;
+    height: 75vh; /* Adjusted height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) { /* Responsive adjustment for smaller screens */
+    .button {
+      width: calc(100% / 2 - 22px); /* Two buttons per row for smaller screens */
+      margin: 10px;
+      padding: 10px 10px;
+    }
+  }
+
+  @media (max-width: 480px) { /* Responsive adjustment for mobile screens */
+    .button {
+      width: 100%; /* One button per row for very small screens */
+      margin: 10px 0; /* Adjusted vertical margins */
+    }
   }
 </style>
 </head>
