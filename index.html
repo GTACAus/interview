@@ -12,46 +12,46 @@
     color: #333;
   }
   .button {
-    padding: 10px 20px; /* More compact padding */
+    padding: 10px 20px; /* Appropriate padding */
     background-color: #dddddd;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
-    display: inline-block;
-    width: calc(100% / 3 - 22px); /* Ensure three buttons fit per row */
-    margin: 10px; /* Consistent margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(33.33% - 14px); /* Adjusted for 3 buttons per row taking into account 10px margin */
+    margin: 5px; /* Smaller margins */
     text-decoration: none;
     color: black;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     font-size: 16px;
   }
   .button-container {
-    text-align: center;
-    padding: 20px 0; /* Padding for the container */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Adjusted to space-around for even spacing */
+    justify-content: space-between; /* Ensures even spacing */
+    padding: 10px;
   }
   img.fullscreen {
     width: 100%;
-    height: 75vh; /* Adjusted height */
+    height: 75vh;
     object-fit: cover; /* Ensures the image covers the area without distortion */
     margin-bottom: 20px;
   }
 
-  @media (max-width: 768px) { /* Responsive adjustment for smaller screens */
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
     .button {
-      width: calc(100% / 2 - 22px); /* Two buttons per row for smaller screens */
-      margin: 10px;
-      padding: 10px 10px;
+      width: calc(50% - 10px); /* Two buttons per row */
     }
   }
 
-  @media (max-width: 480px) { /* Responsive adjustment for mobile screens */
+  @media (max-width: 480px) {
     .button {
-      width: 100%; /* One button per row for very small screens */
-      margin: 10px 0; /* Adjusted vertical margins */
+      width: 100%; /* One button per row */
+      margin: 5px 0;
     }
   }
 </style>
