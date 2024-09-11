@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Vera</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Calibri, sans-serif;
+        }
+        .iframe-container {
+            width: 500px; /* Set width of the container */
+            height: 600px; /* Set height of the container */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: white;
+            border: 1px solid #ccc;
+            position: relative;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center contents horizontally */
+            justify-content: center; /* Center contents vertically */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .overlay-rectangle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px; /* Adjust height for better padding */
+            background-color: white;
+            padding: 10px; /* Added padding for spacing */
+            box-sizing: border-box;
+            z-index: 10;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+            justify-content: center; /* Center items vertically */
+        }
+        .overlay-rectangle img {
+            max-width: 40px; /* Adjusted size of the image */
+            max-height: 40px; /* Adjusted height for better spacing */
+            border-radius: 15px;
+            margin-bottom: 0px; /* Space between the image and the text */
+        }
+        .overlay-rectangle p {
+            margin: 0;
+            font-size: 16px; /* Adjust font size for better readability */
+            font-weight: bold;
+        }
+        .overlay-rectangle ul {
+            list-style-type: none; /* Remove bullets */
+            padding: 0;
+            margin: 0;
+        }
+        .overlay-rectangle li {
+            margin: 5px 0; /* Space between list items */
+        }
+        .overlay-rectangle2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px; /* Adjusted height for buttons */
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            z-index: 10000;
+            display: flex;
+            justify-content: center; /* Center buttons horizontally */
+            align-items: center;
+            gap: 10px; /* Space between buttons */
+            font-family: Calibri, sans-serif;
+            font-size: 14px;
+        }
+        .calendar-button, .evidence-button {
+            background-color: #007bff; /* Button color */
+            color: white; /* Button text color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center; /* Center text inside button */
+        }
+        .calendar-button:hover, .evidence-button:hover {
+            background-color: #0056b3; /* Darker button color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe src="https://landbot.online/v3/H-2507354-0TTINOMG5GXAKVQ6/index.html" title="Embedded Site 2"></iframe>
+        <div class="overlay-rectangle">
+            <img src="https://cdn.glitch.global/668e12e3-48cf-446e-b556-edffdc771e18/Screen%20Shot%202024-09-11%20at%2010.33.37%20am.png?v=1726015014753" alt="Overlay Image">
+            <p>Vera Murphy</p>
+            <ul>
+                <li>Environmental activist who has spent time in juvenile detention</li>
+            </ul>
+        </div>
+        <div class="overlay-rectangle2">
+            <a href="https://gtacaus.github.io/calendars/Vera.html" target="_blank" class="calendar-button">Vera's Calendar</a>
+            <a href="https://www.thinglink.com/card/1827142681298469732" target="_blank" class="evidence-button">Evidence Map</a>
+        </div>
+    </div>
+</body>
+</html>
