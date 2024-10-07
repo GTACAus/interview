@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interview the Suspects</title>
+<style>
+  body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+  }
+  .button {
+    padding: 5px 10px; /* Reduced padding for a slimmer look */
+    background-color: #dddddd;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: block; /* Changed from flex to block for button */
+    width: calc(33.33% - 20px); /* Fine-tuned width calculation */
+    margin: 5px; /* Adjusted margin for precise spacing */
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-size: 16px;
+  }
+  .button-container {
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-between; /* Adjusted for even spacing */
+    padding: 10px;
+  }
+ img.fullscreen {
+    width: 60%; /* Adjusted width to 60% */
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin: 0 auto 20px; /* Centered horizontally and margin below */
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .button {
+      width: calc(50% - 20px); /* Two buttons per row */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .button {
+      width: 100%; /* One button per row */
+      margin: 5px 0;
+    }
+  }
+</style>
+</head>
+<body>
+<img src="bios.JPG" alt="Background Image" class="fullscreen">
+<div class="button-container">
+  <a href="https://www.chatgpt.com/?Angus" class="button">Interview Angus Neal</a>
+  <a href="https://www.chatgpt.com/?Eve" class="button">Interview Eve Haddad</a>
+  <a href="https://www.chatgpt.com/?Angelo" class="button">Interview Angelo Hart</a>
+  <a href="https://www.chatgpt.com/?Harley" class="button">Interview Harley Macias</a>
+  <a href="https://www.chatgpt.com/?Shadiyah" class="button">Interview Shadiyah Hobbs</a>
+  <a href="https://www.chatgpt.com/?Vera" class="button">Interview Vera Murphy</a>
+</div>
+</body>
+</html>
